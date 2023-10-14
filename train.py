@@ -4,8 +4,8 @@ import time
 from torch.utils.data import DataLoader
 from torch.utils.tensorboard import SummaryWriter
 import math
-import dataset
-from  model_vgg16 import *
+import datase.dataset
+from  model.model_vgg16 import *
 
 
 workers = 32
