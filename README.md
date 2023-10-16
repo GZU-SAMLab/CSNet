@@ -9,6 +9,10 @@ paper: CSNet: A Count-supervised Network via Multiscale MLP-Mixer for Wheat Ear 
 
 
 ## About Data
-We use the global wheat Head Detection dataset for training, where the quantity labels are obtained by summing the target boxes in the dataset.
+We use the global wheat Head Detection ([dataset](http://www.global-wheat.com/gwhd.html)) for training, where the quantity labels are obtained by summing the target boxes in the dataset.
 
 ## Train Model
+```shell
+python train.py --batch_size=xx --epoch=xx --lr=xx --device="cuda" 
+
+```
