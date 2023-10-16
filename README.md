@@ -13,6 +13,8 @@ We use the global wheat Head Detection ([dataset](http://www.global-wheat.com/gw
 
 ## Train Model
 ```shell
-python train.py --batch_size=xx --epoch=xx --lr=xx --device="cuda" 
-
+python train.py --batch_size=16 --epoch=1000 --lr=1e-4 --device="cuda" 
 ```
+## Result
+![](result.png)
+
