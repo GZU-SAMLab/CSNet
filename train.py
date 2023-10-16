@@ -9,14 +9,13 @@ from  model.model_vgg16 import *
 
 
 workers = 32
-save_file = "weight_best_4layer—camb_g2020_model3.pth"
-save_sumary = "train_4_camb_g2020_model3"
+save_file = "weight_best.pth"
+save_sumary = "gwhd_2020"
 def main():
-    print("vgg_4layer_g2020_camb_model3")
+    print("start training")
     parser = argparse.ArgumentParser('Set parameters for training ', add_help=False)
     parser.add_argument('--device', default="cuda", type=str)
     parser.add_argument('--batch_size', default=32, type=int)
-    parser.add_argument('--run_device', default='cs', type=str)
     parser.add_argument("--epoch", default=1000, type=int)
     parser.add_argument("--img_size", default=512, type=int)
     parser.add_argument("--lr", default=0.01, type=float)
@@ -30,22 +29,6 @@ def main():
     epoch = args.epoch
     img_size = args.img_size
 
-    if args.run_device == 'cs':
-        data_root = '/home/liyaoxi/data/gwhd/gwhd_2021/'
-        train_root = data_root + 'train/'
-        train_ann = data_root + 'annotations/train.csv'
-        val_root = data_root + 'val/'
-        val_ann = data_root + 'annotations/val.csv'
-        test_root = data_root + 'test/'
-        test_ann = data_root + 'annotations/test.csv'
-    else:
-        data_root = "D:\datasets\gwhd_2021\\"
-        train_root = data_root + 'train\\'
-        train_ann = data_root + 'train.csv'
-        val_root = data_root + 'val\\'
-        val_ann = data_root + 'val.csv'
-        test_root = data_root + 'test\\'
-        test_ann = data_root + 'test.csv'
 
     # 准备数据集
     train_dataset = dataset.Countgwhd(img_path=train_root, ann_path=train_ann, resize_shape=img_size)
