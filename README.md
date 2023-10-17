@@ -13,11 +13,17 @@ We use the global wheat Head Detection ([dataset](http://www.global-wheat.com/gw
 
 ## Code Structure
 `train.py` To train the model. 
+
 `demo.py` To predict an image. 
+
 `model\model_vgg16.py` The structure of the network and the backbone is vgg16. 
+
 `model\model_MobileNetV2.py` The structure of the network and the backbone is MobileNetV2. 
+
 `model\backbone_vgg16.py` The structure of the first ten layers of Vgg16. 
+
 `tool\gwhdcoco_count.py`  To convert the coco label in the GWHD dataset to count label.
+
 `tool\mergecoco.py`  To combine multiple Json files of coco label into one.
 
 ## Training
