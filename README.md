@@ -5,7 +5,7 @@
 paper: CSNet: A Count-supervised Network via Multiscale MLP-Mixer for Wheat Ear Counting
 
 ## The Overview of CSNet
-![](methodoverview.png pic_center =30x30)
+![](methodoverview.png =30x30)
 
 
 ## About Data
