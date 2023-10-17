@@ -29,6 +29,7 @@ def main():
     epoch = args.epoch
     img_size = args.img_size
 
+    #数据集路径
     data_root = '/home/liyaoxi/data/gwhd/gwhd_2021/'
     train_root = data_root + 'train/'
     train_ann = data_root + 'annotations/train.csv'
