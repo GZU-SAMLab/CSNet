@@ -29,7 +29,15 @@ def main():
     epoch = args.epoch
     img_size = args.img_size
 
+    data_root = '/home/liyaoxi/data/gwhd/gwhd_2021/'
+    train_root = data_root + 'train/'
+    train_ann = data_root + 'annotations/train.csv'
+    val_root = data_root + 'val/'
+    val_ann = data_root + 'annotations/val.csv'
+    test_root = data_root + 'test/'
+    test_ann = data_root + 'annotations/test.csv'
 
+    
     # 准备数据集
     train_dataset = dataset.Countgwhd(img_path=train_root, ann_path=train_ann, resize_shape=img_size)
     val_dataset = dataset.Countgwhd(img_path=val_root, ann_path=val_ann, resize_shape=img_size)
