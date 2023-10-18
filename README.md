@@ -30,6 +30,10 @@ We use the global wheat Head Detection ([dataset](http://www.global-wheat.com/gw
 ```shell
 python train.py --batch_size=16 --epoch=1000 --lr=1e-4 --device="cuda" 
 ```
+# Testing
+```shell
+python test.py --data_root "/home/liyaoxi/data/gwhd/" --device="cuda" 
+```
 
 ## Mode Weight
 
