@@ -14,6 +14,8 @@ We use the global wheat Head Detection ([dataset](http://www.global-wheat.com/gw
 ## Code Structure
 `train.py` To train the model. 
 
+`test.py` To test the model. 
+
 `demo.py` To predict an image. 
 
 `model/model_vgg16.py` The structure of the network and the backbone is vgg16. 
