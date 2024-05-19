@@ -25,8 +25,6 @@ class Countgwhd(Dataset):
         # tensor类型
         image = Image.open(img_path)
         image = image.convert("RGB")
-        image = image.filter(ImageFilter.SHARPEN)
-        image = image.filter(ImageFilter.SHARPEN)
         TOtensor = transforms.ToTensor()
         image = TOtensor(image) * 255
         label = self.ann_path.iloc[idex, 1]
